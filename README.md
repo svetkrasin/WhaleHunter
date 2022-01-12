@@ -1,2 +1,2 @@
 # WhaleHunter
-This Web3 project will show graphs of activity for ETH wallets.
+This Web3 project will show activity graph for ETH wallets.
