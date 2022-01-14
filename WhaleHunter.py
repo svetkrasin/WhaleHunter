@@ -4,7 +4,7 @@ from unittest import result
 from urllib import response
 import requests
 
-etherscan_api = ''
+etherscan_api = 'SECRET_API'
 api_url_base = 'https://api.etherscan.io/api'
 
 def parse(response: requests.Response):
