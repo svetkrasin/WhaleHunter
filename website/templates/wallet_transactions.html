@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}Wallet transactions{% endblock %} {% block content
+	%}
+	<br />
+	<h1 align="center">Transactions for</h1>
+	<h2 align="center">{{wallet_address}}</h2>
+	<br />
+	<ul class="list-group list-group-flush" id="transactions">
+		{% for transaction in transactions %}
+			<li class="list-group-item">
+				{{transaction["from"]}}
+			</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

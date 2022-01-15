@@ -14,11 +14,13 @@ def create_app():
 
 	from .views import views
 	from .auth import auth
+	from .wallet_transactions import transactions
 
 	app.register_blueprint(views, url_prefix='/')
 	app.register_blueprint(auth, url_prefix='/')
+	app.register_blueprint(transactions, url_prefix='/')
 
-	from .models import User, Note
+	from .models import User, Wallet
 
 	create_database(app)
 
